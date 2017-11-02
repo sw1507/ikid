@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="enu-xj-ZBR">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Knock-->
+        <scene sceneID="O3N-FO-HAy">
+            <objects>
+                <viewController title="Knock" id="XLX-yd-6q7" customClass="KnockViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7n0-6V-hcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock knock" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjS-iA-KkM">
+                                <rect key="frame" x="25" y="120" width="364" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Nmi-xD-jDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGs-z2-nZy">
+                                <rect key="frame" x="357" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="knockKnockNext:" destination="XLX-yd-6q7" eventType="touchUpInside" id="scC-Os-JFQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L5q-vu-meR" firstAttribute="trailing" secondItem="nGs-z2-nZy" secondAttribute="trailing" constant="25" id="94s-Vy-UyC"/>
+                            <constraint firstItem="pjS-iA-KkM" firstAttribute="top" secondItem="L5q-vu-meR" secondAttribute="top" constant="100" id="IMx-nF-UxY"/>
+                            <constraint firstItem="pjS-iA-KkM" firstAttribute="leading" secondItem="L5q-vu-meR" secondAttribute="leading" constant="25" id="JzW-nF-yDS"/>
+                            <constraint firstItem="L5q-vu-meR" firstAttribute="trailing" secondItem="pjS-iA-KkM" secondAttribute="trailing" constant="25" id="Uzw-Rp-Hj7"/>
+                            <constraint firstItem="nGs-z2-nZy" firstAttribute="trailing" secondItem="pjS-iA-KkM" secondAttribute="trailing" id="nFY-Dv-7Zh"/>
+                            <constraint firstItem="L5q-vu-meR" firstAttribute="bottom" secondItem="nGs-z2-nZy" secondAttribute="bottom" constant="50" id="p2R-RZ-SuL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L5q-vu-meR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock" id="XKj-vy-iYU"/>
+                    <connections>
+                        <outlet property="knockKnockLabel" destination="pjS-iA-KkM" id="trh-aU-UsV"/>
+                        <outlet property="knockKnockView" destination="7n0-6V-hcC" id="Qm8-2p-UO3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="404-pI-p6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1487.2" y="790.25487256371821"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="yWq-W7-jVs">
+            <objects>
+                <viewController title="Dad" id="fHa-nZ-g2l" customClass="DadViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7dY-ol-zme">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I asked my dad for his best dad joke and he said..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuG-3a-uop">
+                                <rect key="frame" x="25" y="120" width="364" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="w4X-1j-TPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyv-Bf-328">
+                                <rect key="frame" x="357" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="dadJokeNext:" destination="fHa-nZ-g2l" eventType="touchUpInside" id="gOc-sG-vAu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nuG-3a-uop" firstAttribute="leading" secondItem="QqC-fA-S8g" secondAttribute="leading" constant="25" id="5YL-IN-ndl"/>
+                            <constraint firstItem="QqC-fA-S8g" firstAttribute="trailing" secondItem="eyv-Bf-328" secondAttribute="trailing" constant="25" id="JR3-uZ-iRy"/>
+                            <constraint firstItem="QqC-fA-S8g" firstAttribute="bottom" secondItem="eyv-Bf-328" secondAttribute="bottom" constant="50" id="YCb-lj-1jX"/>
+                            <constraint firstItem="nuG-3a-uop" firstAttribute="top" secondItem="QqC-fA-S8g" secondAttribute="top" constant="100" id="Ymh-Sf-jhe"/>
+                            <constraint firstItem="QqC-fA-S8g" firstAttribute="trailing" secondItem="nuG-3a-uop" secondAttribute="trailing" constant="25" id="Zpv-Nv-AGm"/>
+                            <constraint firstItem="eyv-Bf-328" firstAttribute="trailing" secondItem="nuG-3a-uop" secondAttribute="trailing" id="g5V-Ye-2Rs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QqC-fA-S8g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" id="7xj-S1-hxY"/>
+                    <connections>
+                        <outlet property="dadJokeLabel" destination="nuG-3a-uop" id="cYe-sA-OW9"/>
+                        <outlet property="dadJokeView" destination="7dY-ol-zme" id="i0S-Cy-1WC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4i-aW-Xfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733.33333333333337" y="790.76086956521749"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="jtr-bx-fbG">
+            <objects>
+                <viewController title="Pun" id="n1F-Jr-1NY" customClass="PunViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B9s-up-KUz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZy-kc-qBx">
+                                <rect key="frame" x="357" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="punJokeNext:" destination="n1F-Jr-1NY" eventType="touchUpInside" id="hht-Rr-i9V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did the buffalo say when his son went to college?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Iq-bi-E6r">
+                                <rect key="frame" x="25" y="120" width="364" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="D90-5Y-B4f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ALT-Vb-jBZ" firstAttribute="trailing" secondItem="0Iq-bi-E6r" secondAttribute="trailing" constant="25" id="QtI-Ag-kLK"/>
+                            <constraint firstItem="ALT-Vb-jBZ" firstAttribute="trailing" secondItem="OZy-kc-qBx" secondAttribute="trailing" constant="25" id="Til-UL-KPf"/>
+                            <constraint firstItem="ALT-Vb-jBZ" firstAttribute="bottom" secondItem="OZy-kc-qBx" secondAttribute="bottom" constant="50" id="XGN-Pv-JFm"/>
+                            <constraint firstItem="0Iq-bi-E6r" firstAttribute="leading" secondItem="B9s-up-KUz" secondAttribute="leading" constant="25" id="olz-GG-bfH"/>
+                            <constraint firstItem="OZy-kc-qBx" firstAttribute="trailing" secondItem="0Iq-bi-E6r" secondAttribute="trailing" id="pBS-Hc-edv"/>
+                            <constraint firstItem="0Iq-bi-E6r" firstAttribute="top" secondItem="ALT-Vb-jBZ" secondAttribute="top" constant="100" id="w0E-as-sdB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ALT-Vb-jBZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" id="0ZC-0H-UHS"/>
+                    <connections>
+                        <outlet property="punJokeLabel" destination="0Iq-bi-E6r" id="NYB-oF-vYL"/>
+                        <outlet property="punJokeView" destination="B9s-up-KUz" id="C5x-n5-zlL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3t-0w-v0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220.28985507246378" y="344.83695652173918"/>
+        </scene>
+        <!--Good-->
+        <scene sceneID="fob-2m-25e">
+            <objects>
+                <viewController title="Good" id="OCy-nY-ZpZ" customClass="GoodViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pcj-36-9HN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My boss told me to have a good day." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-Nh-uql">
+                                <rect key="frame" x="25" y="120" width="364" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tRi-Wd-Bet"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNw-Q6-qvn">
+                                <rect key="frame" x="357" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="goodJokeNext:" destination="OCy-nY-ZpZ" eventType="touchUpInside" id="qyR-Ym-TOB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="waO-rJ-Iam" firstAttribute="trailing" secondItem="oNw-Q6-qvn" secondAttribute="trailing" constant="25" id="1IC-UW-ONJ"/>
+                            <constraint firstItem="Kme-Nh-uql" firstAttribute="leading" secondItem="waO-rJ-Iam" secondAttribute="leading" constant="25" id="3Lf-Fs-6qy"/>
+                            <constraint firstItem="oNw-Q6-qvn" firstAttribute="trailing" secondItem="Kme-Nh-uql" secondAttribute="trailing" id="6of-b2-zYh"/>
+                            <constraint firstItem="Kme-Nh-uql" firstAttribute="top" secondItem="waO-rJ-Iam" secondAttribute="top" constant="100" id="8CO-Dp-JES"/>
+                            <constraint firstItem="waO-rJ-Iam" firstAttribute="trailing" secondItem="Kme-Nh-uql" secondAttribute="trailing" constant="25" id="DYq-cA-jPt"/>
+                            <constraint firstItem="waO-rJ-Iam" firstAttribute="bottom" secondItem="oNw-Q6-qvn" secondAttribute="bottom" constant="50" id="XjU-h1-tkI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="waO-rJ-Iam"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" id="Dto-wR-u4N"/>
+                    <connections>
+                        <outlet property="goodJokeLabel" destination="Kme-Nh-uql" id="Qev-N6-t8C"/>
+                        <outlet property="goodJokeView" destination="Pcj-36-9HN" id="Uho-62-SEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NC9-X9-Lnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="-319.79010494752629"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ASq-oA-GRg">
+            <objects>
+                <tabBarController id="enu-xj-ZBR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GV0-Sz-ljW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OCy-nY-ZpZ" kind="relationship" relationship="viewControllers" id="FbV-Wo-nJO"/>
+                        <segue destination="n1F-Jr-1NY" kind="relationship" relationship="viewControllers" id="mBm-xY-Lab"/>
+                        <segue destination="fHa-nZ-g2l" kind="relationship" relationship="viewControllers" id="P4J-JQ-Me2"/>
+                        <segue destination="XLX-yd-6q7" kind="relationship" relationship="viewControllers" id="9IB-n8-xGr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20V-WA-wrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="14"/>
+        </scene>
+    </scenes>
+</document>
